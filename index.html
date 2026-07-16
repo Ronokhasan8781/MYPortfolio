@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="flex flex-col md:flex-row">
+      <!-- Sidebar -->
+      <aside
+        class="w-full md:w-1/5 bg-gray-800 text-white flex flex-col items-center py-8 md:min-h-screen"
+      >
+        <!-- Profile Picture -->
+        <div
+          class="rounded-full w-24 h-24 md:w-36 md:h-36 overflow-hidden border-4 border-teal-500 mb-4"
+        >
+          <img
+            src="./Profile.jpg"
+            alt="Profile"
+            class="object-cover w-full h-full"
+          />
+        </div>
+        <!-- Menu -->
+        <nav class="w-full">
+          <ul class="space-y-4">
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="about"
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="education"
+              >
+                Education
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="experience"
+              >
+                Experience
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="skills"
+              >
+                Skills
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="projects"
+              >
+                Projects
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="awards"
+              >
+                Awards
+              </button>
+            </li>
+            <li>
+              <button
+                class="btn btn-ghost w-full text-left"
+                data-section="contact"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8 text-black">
+        <div id="content" class="bg-white shadow-lg rounded-lg p-4 md:p-6">
+          <h1 class="text-xl md:text-4xl font-bold">Welcome!</h1>
+          <p class="text-gray-700 text-5xl font-bold mt-2">
+            <h1 class='text-xl md:text-4xl font-bold '>About Me</h1><p class='mt-2 text-black text-justify'>I am <b>Ronok Hashan</b>, a dedicated researcher and practitioner in the fields of <b>Machine Learning, Deep Learning, Federated Learning, and Image Processing</b>. With a passion for innovation and problem-solving, my work bridges advanced computational techniques with real-world applications in <b>Computer Vision, Smart Sensors, and the Internet of Things (IoT)</b>.
+             Throughout my career, I have specialized in developing robust, scalable solutions that address complex challenges, particularly in healthcare, smart systems, and autonomous technologies. My expertise lies in designing and optimizing deep learning architectures, implementing federated learning frameworks for privacy-preserving data processing, and advancing image analysis techniques for critical domains.
+             Notable achievements in my journey include pioneering a <b>Federated Learning model for medical image classification, detection and segmentation</b>, integration of privacy-preserving AI systems. These accomplishments reflect my commitment to excellence and my drive to push the boundaries of innovation in my field.
+             Currently, my research focuses on exploring advanced federated learning techniques for secure and efficient data collaboration. This work addresses pressing challenges in data security, real-time processing, and healthcare and aligns with my vision of creating technology that positively impacts society.
+             Beyond my professional endeavors, I am passionate about exploring emerging technologies, mentoring aspiring technologists, and engaging in interdisciplinary collaborations. These activities inspire me to think creatively and continuously evolve as a professional.
+             I am always eager to collaborate on projects, share knowledge, and contribute to advancing the fields of AI, IoT, and beyond. If you are interested in connecting, feel free to reach out via email. Let's work together to create innovative solutions and make a lasting impact.</p>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const contentData = {
+        about: `<h1 class='text-xl md:text-4xl font-bold '>About Me</h1><p class='mt-2 text-black text-justify'>I am <b>Ronok Hashan</b>, a dedicated researcher and practitioner in the fields of <b>Machine Learning, Deep Learning, Federated Learning, and Image Processing</b>. With a passion for innovation and problem-solving, my work bridges advanced computational techniques with real-world applications in <b>Computer Vision, Smart Sensors, and the Internet of Things (IoT)</b>.
+        Throughout my career, I have specialized in developing robust, scalable solutions that address complex challenges, particularly in healthcare, smart systems, and autonomous technologies. My expertise lies in designing and optimizing deep learning architectures, implementing federated learning frameworks for privacy-preserving data processing, and advancing image analysis techniques for critical domains.
+        Notable achievements in my journey include pioneering a <b>Federated Learning model for medical image classification, detection and segmentation</b>, integration of privacy-preserving AI systems. These accomplishments reflect my commitment to excellence and my drive to push the boundaries of innovation in my field.
+        Currently, my research focuses on exploring advanced federated learning techniques for secure and efficient data collaboration. This work addresses pressing challenges in data security, real-time processing, and healthcare and aligns with my vision of creating technology that positively impacts society.
+        Beyond my professional endeavors, I am passionate about exploring emerging technologies, mentoring aspiring technologists, and engaging in interdisciplinary collaborations. These activities inspire me to think creatively and continuously evolve as a professional.
+        I am always eager to collaborate on projects, share knowledge, and contribute to advancing the fields of AI, IoT, and beyond. If you are interested in connecting, feel free to reach out via email. Let's work together to create innovative solutions and make a lasting impact.</p>
+                <div class='mt-4 flex space-x-4'>
+                    <a href="https://www.facebook.com/ronok.hassan.9406" target="_blank" class="text-blue-600 text-4xl"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ronok-hasan-539751200/" target="_blank" class="text-blue-700 text-4xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Ronokhasan8781" target="_blank" class="text-gray-900 text-4xl"><i class="fab fa-github"></i></a>
+                    <a href="https://join.skype.com/invite/wXM9NELflZjp" target="_blank" class="text-blue-400 text-4xl"><i class="fab fa-skype"></i></a>
+                    <a href="https://orcid.org/0009-0007-4533-5495" target="_blank" class="text-green-600 text-4xl"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.webofscience.com/wos/author/record/LSK-0593-2024" target="_blank" class="text-gray-800 text-4xl"><i class="fas fa-user-circle"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=CMD28LMAAAAJ&view_op=list_works&gmla=AOAOcb0oA7DfOIklHZq_0-PxsqbpSI6_KSuuqDDKGmoiAtEF9CPfSRk8kUCqzXciyQ4o3jevhSJVLxWX_VmQtz3ryJZDwNTDsRm3L4_pGQaxMufzwpKMxV6gnnQwOUC8WYjLL0uazzZp" target="_blank" class="text-red-600 text-4xl"><i class="fas fa-graduation-cap"></i></a>
+                </div>`,
+        education: `<h1 class='text-xl md:text-3xl font-bold'>Education</h1>
+                        <ul class='mt-4 space-y-4 text-black'>
+                            <li>
+                                <h2 class='font-semibold'>Islamic University, Kushtia, Bangladesh</h2>
+                                <p>B.Sc. Engineering in Electrical and Electronic Engineering (EEE)</p>
+                                <p>CGPA: 3.68 / 4.00 (Last semester is 3.75)</p>
+                                <p class='text-sm text-gray-500'>January 2019 - October 2025</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Govt Shahid Bulbul College, Pabna</h2>
+                                <p>Higher-Secondary School Certificate (H.S.C.)</p>
+                                <p>Background: Science</p>
+                                <p>GPA: 5.00 / 5.00</p>
+                                <p class='text-sm text-gray-500'>May 2016 - May 2019</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Pabna Zilla School, Pabna</h2>
+                                <p>Secondary School Certificate (S.S.C.)</p>
+                                <p>Background: Science</p>
+                                <p>GPA: 5.00 / 5.00</p>
+                                <p class='text-sm text-gray-500'>January 2008 - April 2016</p>
+                            </li>
+                        </ul>`,
+        experience: `<h1 class='text-xl md:text-3xl font-bold'>Experience</h1>
+                        <ul class='mt-4 space-y-4 text-black'>
+                            <li>
+                                <h2 class='font-semibold'>Vice Chair</h2>
+                                <p>IEEE Islamic University Student Branch</p>
+                                <p class='text-sm text-gray-500'>October 2025 - Present</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Joint Secretary</h2>
+                                <p>IEEE Islamic University Student Branch</p>
+                                <p class='text-sm text-gray-500'>May 2024 - October 2025</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Research Assistant</h2>
+                                <p>Islamic University Bio-Imaging Research Lab</p>
+                                <p class='text-sm text-gray-500'> August 2024 – Present </p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Research Assistant</h2>
+                                <p>Smart Sensors & Microactuators Research & Training (SMaRT) Lab</p>
+                                <p class='text-sm text-gray-500'> June 2023 – Present</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>IT Secretary</h2>
+                                <p>Islamic University Science Club</p>
+                                <p class='text-sm text-gray-500'>December 2023 - December 2024</p>
+                            </li>
+                            <li>
+                                <h2 class='font-semibold'>Member</h2>
+                                <p>Islamic University IT Society</p>
+                                <p class='text-sm text-gray-500'>July 2023 - Present</p>
+                            </li>
+                        </ul>`,
+        skills: `<h1 class='text-xl md:text-3xl font-bold'>Skills</h1>
+                     <h2 class='mt-4 font-semibold'>Programming Languages & Tools</h2>
+                     <div class='flex flex-wrap gap-4 mt-2'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='HTML' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' alt='CSS' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' alt='JavaScript' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg' alt='Django' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' alt='C' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' alt='C++' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' alt='GitHub' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg' alt='Photoshop' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg' alt='MATLAB' class='h-8'>
+                         <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' alt='TensorFlow' class='h-8'>
+                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX" class="h-8">
+                     </div>
+                     <h2 class='mt-4 font-semibold'>Soft Skills</h2>
+                     <ul class='list-disc pl-6 mt-2'>
+                         <li>Networking</li>
+                         <li>Leadership</li>
+                         <li>Team-work</li>
+                     </ul>`,
+        projects: `<h1 class='text-xl md:text-3xl font-bold'>Projects And Conferefnces Experiences</h1>
+                  <p class='mt-2'>Discover my portfolio showcasing innovative projects and impactful contributions presented at leading conferences.</p>
+                  <br/>
+                  <br/>
+                  <div class="hero" style="background-image: url('NSTU.jpg'); height: 60vh; background-size: cover; background-position: center;">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold"> Conference Presentation Certificate</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="hero" style="background-image: url('unnamed (1).jpg'); height: 60vh; background-size: cover; background-position: center;">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold"> In Conference with Honourable Teachers</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="hero" style="background-image: url('Chatbot Project.jpg'); height: 60vh; background-size: cover; background-position: center;">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Chatbot Project</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero" style="background-image: url('project1stimage.jpg'); height: 60vh; background-size: cover; background-position: center;">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Heart Rate Monitoring</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="hero" style="background-image: url('project 2nd image.jpg'); height: 60vh; background-size: cover; background-position: center;">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Wireless Mobile Control Smart Robotic Car</h1>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  `,
+        awards: `<h1 class='text-xl md:text-3xl font-bold'>Awards & Certifications</h1>
+                     <ul class='mt-4 list-disc pl-6'>
+                         <li>Introduction to Computer Vision and Image Processing- <a href='https://www.coursera.org/account/accomplishments/certificate/2KBN4B5XPHP6#' target='_blank' class='text-blue-600'>View Credentials</a></li>
+                     </ul>
+                     <ul class='mt-4 list-disc pl-6'>
+                         <li>Natural Language Processing with Sequence - <a href='http://www.coursera.org/account/accomplishments/certificate/XWI788S4HI3L' target='_blank' class='text-blue-600'>View Credentials</a></li>
+                     </ul>
+                     <ul class='mt-4 list-disc pl-6'>
+                         <li>Instructed by: Machine learning and Data Science (Coursera) - <a href='https://www.coursera.org/account/accomplishments/certificate/LPPGFWAF9PQL' target='_blank' class='text-blue-600'>View Credentials</a></li>
+                     </ul>
+                     <ul class='mt-4 list-disc pl-6'>
+                         <li>Instructed by: Andrew Ng, Founder DeepLearning.AI (Coursera) - <a href='https://www.coursera.org/account/accomplishments/certificate/7PZSP2F47YN3' target='_blank' class='text-blue-600'>View Credentials</a></li>
+                     </ul>
+                     <ul class='mt-4 list-disc pl-6'>
+                         <li>Advanced Learning Algorithms - <a href='https://www.coursera.org/account/accomplishments/certificate/VQ8KZGJUNF9P ' target='_blank' class='text-blue-600'>View Credentials</a></li>
+                     </ul>
+                     `,
+        contact: `<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center space-y-6">
+                    <div>
+                        <i class="fas fa-map-marker-alt text-4xl text-red-500"></i>
+                        <h2 class='font-semibold text-lg mt-2'>Address</h2>
+                        <p>Islamic University, Kushtia-7003</p>
+                        <p>Bangladesh</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone text-4xl text-green-500"></i>
+                        <h2 class='font-semibold text-lg mt-2'>Phone</h2>
+                        <p>+8801791744154 (WhatsApp/Call)</p>
+                        <p>+8801884718223</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope text-4xl text-blue-500"></i>
+                        <h2 class='font-semibold text-lg mt-2'>Email</h2>
+                        <p>ronokhasan2000@std.iu.ac.bd</p>
+                        <p>ronokhasaneee.iu@gmail.com</p>
+                        <p>ronokhasan8781@gmail.com</p>
+                    </div>
+                    <div class='mt-4 flex space-x-4 items-center justify-center'>
+                        <a href="https://www.facebook.com/ronok.hassan.9406" target="_blank" class="text-blue-600 text-4xl"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ronok-hasan-539751200/" target="_blank" class="text-blue-700 text-4xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ronokhasan8781" target="_blank" class="text-gray-900 text-4xl"><i class="fab fa-github"></i></a>
+                        <a href="https://join.skype.com/invite/wXM9NELflZjp" target="_blank" class="text-blue-400 text-4xl"><i class="fab fa-skype"></i></a>
+                        <a href="https://orcid.org/0009-0007-4533-5495" target="_blank" class="text-green-600 text-4xl"><i class="fab fa-orcid"></i></a>
+                        <a href="https://www.webofscience.com/wos/author/record/LSK-0593-2024" target="_blank" class="text-gray-800 text-4xl"><i class="fas fa-user-circle"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=CMD28LMAAAAJ&view_op=list_works&gmla=AOAOcb0oA7DfOIklHZq_0-PxsqbpSI6_KSuuqDDKGmoiAtEF9CPfSRk8kUCqzXciyQ4o3jevhSJVLxWX_VmQtz3ryJZDwNTDsRm3L4_pGQaxMufzwpKMxV6gnnQwOUC8WYjLL0uazzZp" target="_blank" class="text-red-600 text-4xl"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                    
+                </div>
+                <div>
+                    <form action="https://formspree.io/f/mjkvdjga" method="POST" enctype="multipart/form-data" class="space-y-4">
+                        <label class="block text-left">
+                            <span class="text-gray-700">Name:</span>
+                            <input type="text" name="name" class="mt-1 bg-white border block w-full h-10 rounded border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-200">
+                        </label>
+                        <label class="block text-left">
+                            <span class="text-gray-700">Your email:</span>
+                            <input type="email" name="email" class="mt-1 bg-white border block w-full h-10 rounded border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-200" required>
+                        </label>
+                        <label class="block text-left">
+                            <span class="text-gray-700">Enter your message:</span>
+                            <textarea rows="4" cols="50" type="text" name="text" class="mt-1 bg-white border block w-full h-26 rounded border-gray-300 shadow-sm focus:border-teal-500 focus:ring focus:ring-teal-200" required></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary w-full">Send</button>
+                    </form>
+                </div>
+            </div>`,
+      };
+
+      document.querySelectorAll("button[data-section]").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const section = e.target.getAttribute("data-section");
+          document.getElementById("content").innerHTML = contentData[section];
+        });
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/fa07095628.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
